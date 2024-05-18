@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+form{
+    @apply flex flex-col border rounded p-4
+}
+input,textarea{
+    @apply rounded p-2
+}
+button{
+    @apply bg-blue-500 text-white p-2 rounded w-fit px-8 self-end
+}
+input:focus,textarea:focus{
+    @apply outline-none border border-none
+}
