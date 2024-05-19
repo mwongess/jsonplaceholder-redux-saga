@@ -1,6 +1,7 @@
-import { all } from 'redux-saga/effects';
 import { call, put, takeEvery } from 'redux-saga/effects';
+import { all } from 'redux-saga/effects';
 import axios from 'axios';
+
 import { API_URL } from '../constants/api';
 
 // Fetch posts

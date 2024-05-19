@@ -5,7 +5,7 @@ import Loading from './Loading';
 
 const PostList = () => {
     const dispatch = useDispatch();
-    const { posts, loading, error } = useSelector((state) => state.posts);
+    const { posts, loading } = useSelector((state) => state.posts);
 
     useEffect(() => {
         dispatch({ type: 'FETCH_POSTS_REQUEST' });
@@ -14,6 +14,7 @@ const PostList = () => {
     if (loading) {
         return <Loading />
     }
+
     const reversedPosts = [...posts].reverse();
 
     return (
